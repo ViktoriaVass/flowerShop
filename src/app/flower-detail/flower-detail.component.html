@@ -1,0 +1,17 @@
+<div class="flower-list">
+    <div class="column image">
+        <img [src]="flower.image" [alt]="'Image ' + flower.name + ' ' + flower.color">
+    </div>
+    <div class="column mainInfo">
+        <p class="flowerName">{{ flower.name }}</p>
+        <p class="flowerColor">Farbe: {{ flower.color }}</p>
+    </div>
+    <div class="column description">
+        <p>{{ flower.description }}</p>
+        <p>{{ flower.bloom_season }}</p>
+    </div>
+    <div class="column price">
+        <p>{{ flower.price | currency: "EUR" }}</p>
+        <button (click)="addToCart(flower)">Kaufen</button>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div>
+<div class="filters">
+    <div class="name">
+        <p>Art:</p>
+        <!--- FormsModule mit ngModel IMPORTIEREN!!!! sonst funktioniert NICHT --->
+        <label><input type="radio" value="Rose" [(ngModel)]="nameFilter">Rose</label>
+        <label><input type="radio" value="Tulpe" [(ngModel)]="nameFilter">Tulpe</label>
+        <label><input type="radio" value="Lilien" [(ngModel)]="nameFilter">Lilien</label>
+        <label><input type="radio" value="" [(ngModel)]="nameFilter">Alle</label>
+    </div>    
+    <div class="color">
+        <p>Farbe:</p>
+        <!--queryParamsHandling="merge" = behalten von anderen Filtern, 
+            wenn zB Name auch mit queryParamters gefiltert wird-->
+        <a routerLink="/flower-catalogue" [queryParams]="{colorFilter: 'Rot'}" routerLinkActive="active" class="button" queryParamsHandling="merge">Rot</a>
+        <a routerLink="/flower-catalogue" [queryParams]="{colorFilter: 'Gelb'}" routerLinkActive="active" class="button" queryParamsHandling="merge">Gelb</a>
+        <a class="button" (click)="colorFilter='Rosa'">Rosa</a>
+        <a routerLink="/flower-catalogue" [queryParams]="{colorFilter: ''}" routerLinkActive="active" class="button" queryParamsHandling="merge">Alle</a>
+    </div>
+</div>
+<div>
+    <div *ngIf="getFilteredList().length === 0">Keine {{nameFilter}} - Farbe: {{colorFilter | lowercase}} gefunden</div>
+    <div *ngFor="let flower of getFilteredList()">
+        <app-flower-detail [flower]="flower"></app-flower-detail>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,34 @@
+.name,
+.color {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+
+}
+
+a.button {
+    font-size: 15px;
+    padding: 15px 25px;
+    background-color: #396453;
+    color: #c3b8a2;
+    border: 0;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+a.button:hover {
+    color: #ffffff;
+}
+
+a.button.active {
+
+    border-bottom: 2px solid #d25ca1;
+}
+
+.name label {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
