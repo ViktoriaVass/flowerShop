@@ -60,7 +60,7 @@ Thumbs.db
 # Ignore all local history of files
 .history
 .ionide
-.editconfig
+.editorconfig
 
 # Miscellaneous
 .angular
