@@ -1,15 +1,17 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,angular
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,angular
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+### Angular ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# dependencies
+node_modules/
+bower_components/
 
 # IDEs and editors
 .idea/
@@ -20,16 +22,47 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
-# Visual Studio Code
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
+testem.log
+typings/
+.angular/
+.angular/*
+.angular
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
+Thumbs.db
+
+### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 # Miscellaneous
-/.angular/cache
+.angular
 .sass-cache/
 /connect.lock
 /coverage
@@ -37,6 +70,4 @@ yarn-error.log
 testem.log
 /typings
 
-# System files
-.DS_Store
-Thumbs.db
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,angular
