@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IFlower } from '../flower.model';
+import { IFlower } from '../flower-catalogue/flower.model';
 
 @Injectable({
   providedIn: 'root'

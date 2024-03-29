@@ -1,1 +1,24 @@
-<p>cart works!</p>
+<div>
+    <div>Warenkorb</div>
+    <div *ngFor="let flower of cartItems">
+        <div>{{ flower.name }}</div>
+        <div>{{ flower.price }}</div>
+        <button (click)="removeFromCart(flower)">Entfernen</button>
+    </div>
+    <div>Gesamtpreis: {{getTotalPrice() | currency: "EUR"}}</div>
+    <div>
+        <div>Bitte Gutschein wählen:</div>
+        <label>
+            <input type="radio" name="gutschein" id="rose" value="10rose" [(ngModel)]="gutschein">
+            10% auf alle Rosen
+        </label><br>
+        <label>
+            <input type="radio" name="gutschein" id="alles" value="5alles" [(ngModel)]="gutschein">
+            5% auf Alles
+        </label><br>
+        <label>
+            <input type="radio" name="gutschein" id="lieferung" value="lieferung" [(ngModel)]="gutschein">
+            Gratis Lieferung
+        </label><br>
+    </div> 
+</div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IFlower } from '../flower-catalogue/flower.model';
 
 @Component({
@@ -8,9 +8,10 @@ import { IFlower } from '../flower-catalogue/flower.model';
 })
 export class FlowerDetailComponent {
   @Input() flower!: IFlower;
+  @Output() buy = new EventEmitter();
 
   addToCart(flower: IFlower) {
-    console.log(flower.name + ' added to cart')
+    this.buy.emit();
     }
 
 }

@@ -1,82 +1,180 @@
 {
-    "warenkorb": [],
-    "flowers": [
-      {
-        "id": 1,
-        "name": "Rose",
-        "price": 3.50,
-        "color": "Rot",
-        "bloom_season": ["Frühling", "Sommer"],
-        "size": "Mittelgroß",
-        "planting_season": ["Herbst"],
-        "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
-        "image": "/assets/images/rose-rot.jpeg"
-      },
-      {
-        "id": 2,
-        "name": "Rose",
-        "price": 2.90,
-        "color": "Gelb",
-        "bloom_season": ["Frühling", "Sommer"],
-        "size": "Mittelgroß",
-        "planting_season": ["Herbst"],
-        "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
-        "image": "/assets/images/rose-gelb.jpeg"
-      },
-      {
-        "id": 3,
-        "name": "Rose",
-        "price": 3.70,
-        "color": "Rosa",
-        "bloom_season": ["Frühling", "Sommer"],
-        "size": "Mittelgroß",
-        "planting_season": ["Herbst"],
-        "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
-        "image": "/assets/images/rose-rosa.jpeg"
-      },
-      {
-        "id": 4,
-        "name": "Tulpe",
-        "price": 2.30,
-        "color": "Gelb",
-        "bloom_season": ["Frühling"],
-        "size": "Klein",
-        "planting_season": ["Herbst"],
-        "description": "Tulpen sind bekannt für ihre leuchtenden Farben und kommen in verschiedenen Formen und Größen.",
-        "image": "/assets/images/tulpe-gelb.jpeg"
-      },
-      {
-        "id": 5,
-        "name": "Tulpe",
-        "price": 2.50,
-        "color": "Rot",
-        "bloom_season": ["Frühling"],
-        "size": "Klein",
-        "planting_season": ["Herbst"],
-        "description": "Tulpen sind bekannt für ihre leuchtenden Farben und kommen in verschiedenen Formen und Größen.",
-        "image": "/assets/images/tulpe-rot.jpeg"
-      },
-      {
-        "id": 6,
-        "name": "Lilien",
-        "price": 2.00,
-        "color": "Weiß",
-        "bloom_season": ["Frühling", "Sommer"],
-        "size": "Mittelgroß",
-        "planting_season": ["Herbst"],
-        "description": "Lilien sind elegante Blumen mit auffälligen Blüten und einem angenehmen Duft.",
-        "image": "/assets/images/lilien-weiss.jpeg"
-      },
-      {
-        "id": 7,
-        "name": "Lilien",
-        "price": 2.20,
-        "color": "Rosa",
-        "bloom_season": ["Frühling", "Sommer"],
-        "size": "Mittelgroß",
-        "planting_season": ["Herbst"],
-        "description": "Lilien sind elegante Blumen mit auffälligen Blüten und einem angenehmen Duft.",
-        "image": "/assets/images/lilien-rosa.jpeg"
-      }
-    ]
-  }
+  "cart": [
+    {
+      "id": 1,
+      "name": "Rose",
+      "price": 3.5,
+      "color": "Rot",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
+      "image": "/assets/images/rose-rot.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Rose",
+      "price": 2.9,
+      "color": "Gelb",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
+      "image": "/assets/images/rose-gelb.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Rose",
+      "price": 3.7,
+      "color": "Rosa",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
+      "image": "/assets/images/rose-rosa.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Lilien",
+      "price": 2,
+      "color": "Weiß",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Lilien sind elegante Blumen mit auffälligen Blüten und einem angenehmen Duft.",
+      "image": "/assets/images/lilien-weiss.jpeg"
+    }
+  ],
+  "flowers": [
+    {
+      "id": 1,
+      "name": "Rose",
+      "price": 3.5,
+      "color": "Rot",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
+      "image": "/assets/images/rose-rot.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Rose",
+      "price": 2.9,
+      "color": "Gelb",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
+      "image": "/assets/images/rose-gelb.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Rose",
+      "price": 3.7,
+      "color": "Rosa",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Die Rose ist eine der beliebtesten Blumenarten aufgrund ihrer Schönheit und ihres Dufts.",
+      "image": "/assets/images/rose-rosa.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Tulpe",
+      "price": 2.3,
+      "color": "Gelb",
+      "bloom_season": [
+        "Frühling"
+      ],
+      "size": "Klein",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Tulpen sind bekannt für ihre leuchtenden Farben und kommen in verschiedenen Formen und Größen.",
+      "image": "/assets/images/tulpe-gelb.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Tulpe",
+      "price": 2.5,
+      "color": "Rot",
+      "bloom_season": [
+        "Frühling"
+      ],
+      "size": "Klein",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Tulpen sind bekannt für ihre leuchtenden Farben und kommen in verschiedenen Formen und Größen.",
+      "image": "/assets/images/tulpe-rot.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Lilien",
+      "price": 2,
+      "color": "Weiß",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Lilien sind elegante Blumen mit auffälligen Blüten und einem angenehmen Duft.",
+      "image": "/assets/images/lilien-weiss.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Lilien",
+      "price": 2.2,
+      "color": "Rosa",
+      "bloom_season": [
+        "Frühling",
+        "Sommer"
+      ],
+      "size": "Mittelgroß",
+      "planting_season": [
+        "Herbst"
+      ],
+      "description": "Lilien sind elegante Blumen mit auffälligen Blüten und einem angenehmen Duft.",
+      "image": "/assets/images/lilien-rosa.jpeg"
+    }
+  ]
+}

@@ -21,7 +21,7 @@
 <div>
     <div *ngIf="getFilteredList().length === 0">Keine {{nameFilter}} - Farbe: {{colorFilter | lowercase}} gefunden</div>
     <div *ngFor="let flower of getFilteredList()">
-        <app-flower-detail [flower]="flower"></app-flower-detail>
+        <app-flower-detail [flower]="flower" (buy)="addToCart(flower)"></app-flower-detail>
     </div>
 </div>
 </div>

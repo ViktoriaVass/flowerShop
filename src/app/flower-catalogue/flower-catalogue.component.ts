@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { FlowerService } from './services/flower.service';
+import { FlowerService } from '../services/flower.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { IFlower } from './flower.model';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-flower-catalogue',
@@ -14,7 +16,8 @@ nameFilter: string = '';
 
 constructor(
   private flwrSvc: FlowerService,
-  private route: ActivatedRoute
+  private route: ActivatedRoute,
+  private cartSvc: CartService
 ) {}
 
 ngOnInit() {
@@ -37,5 +40,10 @@ getFilteredList() {
   } else {
     return this.flowers;
   }
+}
+
+addToCart(flower: IFlower) {
+  console.log("in addToCart");
+  this.cartSvc.addFlower(flower);
 }
 }
