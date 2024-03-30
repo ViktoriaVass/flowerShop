@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>Registrierung: </h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="formular">
+        <div class="formularGroup">
+            <label for="vorname">Vorname: </label>
+            <input type="text" id="vorname" formControlName="vorname" placeholder="Vorname"> <br>    
+        </div>
+        
+        <div class="formularGroup">
+            <label for="lastname">Nachname: </label>
+            <input type="text" id="lastname" formControlName="lastname" placeholder="Nachname"> <br>    
+        </div>
+       
+        <div class="formularGroup">
+            <label for="favFlower">Liblingsblume: </label>
+            <select id="favFlower" formControlName="favFlower" placeholder="Bitte wählen">
+                <option value="Rose">Rose</option>
+                <option value="Tulpe">Tulpe</option>
+                <option value="Lilien">Lilien</option>
+            </select><br>
+        </div>
+
+        <div class="formularGroup">
+            <label for="email">E-Mail: </label>
+            <input type="email" id="email" formControlName="email" placeholder="E-Mail"> <br>    
+        </div>
+
+        <div class="formularGroup">
+            <label for="passwort">Passwort: </label>
+            <input type="password" id="passwort" formControlName="passwort" placeholder="Passwort"> <br>    
+        </div>
+
+        <div class="buttons" class="formularGroup" style="display: flex; justify-content: center;">
+            <button type="submit" [disabled]="userForm.invalid">Registrieren</button>
+        </div>
+    </form>
+    <div class="registeredUsers">
+        Registrierte Benutzer:
+        <div *ngIf="users.length === 0" class="noUser">Es gibt keine registrierte Benutzer</div>
+        <div *ngFor="let user of users" class="usersList">
+            {{ user.vorname }} {{ user.lastname }} <br>
+            Liblingsblume: {{ user.favFlower }} <br>
+            E-Mail: {{ user.email }}
+        </div>
+    </div>
+</div>

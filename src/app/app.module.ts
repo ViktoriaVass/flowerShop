@@ -8,9 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { FlowerCatalogueComponent } from './flower-catalogue/flower-catalogue.component';
 import { SiteHeaderComponent } from './site-header/site-header.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FlowerDetailComponent } from './flower-detail/flower-detail.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,15 @@ import { FlowerDetailComponent } from './flower-detail/flower-detail.component';
     FlowerCatalogueComponent,
     SiteHeaderComponent,
     PageNotFoundComponent,
-    FlowerDetailComponent
+    FlowerDetailComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
