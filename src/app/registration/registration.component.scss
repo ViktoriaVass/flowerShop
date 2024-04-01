@@ -20,6 +20,7 @@
     align-items: center;
     min-height: 15px;
     max-width: 320px;
+    margin-bottom: 20px;
 }
 
 .registeredUsers {
@@ -38,4 +39,10 @@
 .noUser {
     font-size: 10pt;
     color: #414141;
+}
+
+.error {
+    color: #960000;
+    font-size: 8pt;
+    margin: 0;
 }

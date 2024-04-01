@@ -3,31 +3,38 @@
     <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="formular">
         <div class="formularGroup">
             <label for="vorname">Vorname: </label>
-            <input type="text" id="vorname" formControlName="vorname" placeholder="Vorname"> <br>    
+            <div>
+                <input type="text" id="vorname" formControlName="vorname" placeholder="Vorname">
+                <div class="error"
+                    *ngIf="userForm.get('vorname')?.hasError('required') && userForm.get('vorname')?.touched">
+                    Vorname ist erforderlich</div>
+                <div class="error" *ngIf="userForm.get('vorname')?.hasError('minlength')">Vorname muss mindestens 2
+                    Karakter lang sein</div>
+            </div>
         </div>
-        
+
         <div class="formularGroup">
             <label for="lastname">Nachname: </label>
-            <input type="text" id="lastname" formControlName="lastname" placeholder="Nachname"> <br>    
+            <input type="text" id="lastname" formControlName="lastname" placeholder="Nachname">
         </div>
-       
+
         <div class="formularGroup">
             <label for="favFlower">Liblingsblume: </label>
             <select id="favFlower" formControlName="favFlower" placeholder="Bitte wählen">
                 <option value="Rose">Rose</option>
                 <option value="Tulpe">Tulpe</option>
                 <option value="Lilien">Lilien</option>
-            </select><br>
+            </select>
         </div>
 
         <div class="formularGroup">
             <label for="email">E-Mail: </label>
-            <input type="email" id="email" formControlName="email" placeholder="E-Mail"> <br>    
+            <input type="email" id="email" formControlName="email" placeholder="E-Mail">
         </div>
 
         <div class="formularGroup">
             <label for="passwort">Passwort: </label>
-            <input type="password" id="passwort" formControlName="passwort" placeholder="Passwort"> <br>    
+            <input type="password" id="passwort" formControlName="passwort" placeholder="Passwort">
         </div>
 
         <div class="buttons" class="formularGroup" style="display: flex; justify-content: center;">
